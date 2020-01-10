@@ -1,9 +1,8 @@
 import os
 import setuptools
 
-this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, "README.md"), "r", encoding='utf-8') as f:
-    long_description = f.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
     name="py_auth_header_parser",
@@ -22,6 +21,7 @@ setuptools.setup(
             "wheel",
         ]
     },
+    python_requires='>=3.5',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
