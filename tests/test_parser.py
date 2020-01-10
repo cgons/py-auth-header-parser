@@ -11,6 +11,14 @@ from py_auth_header_parser import parse_auth_header
             {"access_token": "AAA", "refresh_token": "BBB"},
         ),
         (
+            "Authorization: Bearer AAA,Refresh BBB",
+            {"access_token": "AAA", "refresh_token": "BBB"},
+        ),
+        (
+            "Authorization: BearerAAA,RefreshBBB",
+            {"access_token": None, "refresh_token": None},
+        ),
+        (
             "Authorization: Bearer AAA       , Refresh BBB       ",
             {"access_token": "AAA", "refresh_token": "BBB"},
         ),
@@ -33,6 +41,10 @@ from py_auth_header_parser import parse_auth_header
         ),
         (
             "Authorization: Bearer AAA, Refresh ",
+            {"access_token": "AAA", "refresh_token": None},
+        ),
+        (
+            "Authorization: Bearer AAA, Bearer aaa",
             {"access_token": "AAA", "refresh_token": None},
         ),
     ],
