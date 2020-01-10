@@ -8,6 +8,7 @@ _Note: This library does not decode the JWT token. It simply extracts the JWT to
 ```
 pip install py-auth-header-parser
 ```
+https://pypi.org/project/py-auth-header-parser/
 
 
 ## Usage
