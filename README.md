@@ -1,8 +1,7 @@
 Python Auth. Header Parser
 ==========================
-A small and simple library to parse JWT tokens embedded in Authorization or Authentication HTTP headers.
-
-_Note: This library does not decode the JWT token. It simply extracts the JWT token string from the header string._  
+A small and simple library to parse JWT tokens embedded in Authorization or Authentication HTTP headers.  
+_(Note: This library does not decode the JWT token. It simply extracts the JWT token string from the header string.)_  
 
 ## Installation
 ```
@@ -19,8 +18,7 @@ from py_auth_header_parser import parse_auth_header
 header = "Authorization: Bearer AAA, Refresh BBB"
 parsed = parse_auth_header(header)
 
-# 'parsed' will then contain:
-{
+assert parsed == {
   "access_token": "AAA",
   "refresh_token": "BBB",
 }
