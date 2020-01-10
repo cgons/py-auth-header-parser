@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py_auth_header_parser",
-    version="1.0.0",
+    version="1.0.1",
     author="Chrys Gonsalves",
     author_email="cgons@pcxchange.ca",
     description="Small and simple Python library to parse JWT tokens embedded in http auth. headers.",
