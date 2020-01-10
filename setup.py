@@ -10,7 +10,7 @@ setuptools.setup(
     version="1.0.0",
     author="Chrys Gonsalves",
     author_email="cgons@pcxchange.ca",
-    description="A libray to parse JWT tokens provided in an http (auth) header.",
+    description="Small and simple Python library to parse JWT tokens embedded in http auth. headers.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/cgons/py-auth-header-parser",
